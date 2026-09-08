@@ -20,18 +20,20 @@ DDL-скрипты создания таблиц, constraints и сценари�
 ## Структура репозитория
 
 ```text
-.
-├── create_tables.sql   # DDL: Удаление и создание базовых таблиц
-├── constraints.sql     # DDL: Первичные, внешние ключи и ограничения 
-├── copy_data.sql       # DML: Массированная загрузка данных из CSV через \copy
-├── data/                  # CSV-файлы с сгенерированными данными
-   ├── cells.csv
-   ├── fractions.csv
-   ├── items.csv
-   ├── guards.csv
-   ├── prisoners.csv
-   ├── deals.csv
-   └── generate_data.py       # Python-скрипт генерации данных (Faker)
+lab_01/
+├── scripts/
+│   ├── 01_create_tables.sql   # DDL: Удаление и создание базовых таблиц
+│   ├── 02_constraints.sql     # DDL: Первичные, внешние ключи и ограничения
+│   └── 03_copy_data.sql       # DML: Массированная загрузка данных из CSV через \copy
+├── data/
+│   ├── cells.csv
+│   ├── fractions.csv
+│   ├── items.csv
+│   ├── guards.csv
+│   ├── prisoners.csv
+│   ├── deals.csv
+│   └── generate_data.py       # Python-скрипт генерации данных (Faker)
+└── README.md
 ```
 
 ## Предварительные требования
